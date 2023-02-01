@@ -1,12 +1,12 @@
 <!--This website will be disguised as google drive-->
-<title>Website</title> <!--the websites title when you are viewing it-->
-<link rel="icon" type="image/png" href="https://play-lh.googleusercontent.com/ZyWNGIfzUyoajtFcD7NhMksHEZh37f-MkHVGr5Yfefa-IX7yj9SMfI82Z7a2wpdKCA=w240-h480-rw"/> <!--add your websites icon in these quotes -->
+<title>Hidden Website</title> <!--the websites title when you are viewing it-->
+<link rel="icon" type="image/png" href="https://perishablepress.com/wp/wp-content/images/2021/favicon-standard.png"/> <!--add your websites icon in these quotes -->
 
 <script>
 	var origTitle = document.title;
 	function oldTitle() {
 	document.title = origTitle;
-	document.querySelector("link[rel*='icon']").href = "https://play-lh.googleusercontent.com/ZyWNGIfzUyoajtFcD7NhMksHEZh37f-MkHVGr5Yfefa-IX7yj9SMfI82Z7a2wpdKCA=w240-h480-rw"; // also add the icon in these quotes
+	document.querySelector("link[rel*='icon']").href = "https://perishablepress.com/wp/wp-content/images/2021/favicon-standard.png"; // also add the icon in these quotes
 	}
 	function newTitle() {
 	document.title = 'My Drive - Google Drive';
@@ -15,3 +15,5 @@
 	window.onblur = newTitle;
 	window.onfocus = oldTitle;
 </script>
+
+<!--This was made by Landon Kuehner on 2/1/2023-->
