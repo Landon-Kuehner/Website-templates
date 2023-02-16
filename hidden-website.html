@@ -1,32 +1,39 @@
 <style>
- /* Insert your websites css here */
+  /* Insert your websites css here */
 </style>
 
 <!--This website will be disguised as google drive-->
-<title>Hidden Website</title> <!--the websites title when you are viewing it-->
-<link rel="icon" type="image/png" href="https://perishablepress.com/wp/wp-content/images/2021/favicon-standard.png"/> <!--add your websites icon in these quotes -->
+<title>Hidden Website</title>
+<!--the websites title when you are viewing it-->
+<link
+  rel="icon"
+  type="image/png"
+  href="https://perishablepress.com/wp/wp-content/images/2021/favicon-standard.png"
+/>
+<!--add your websites icon in these quotes -->
 
 <script>
-	var origTitle = document.title;
-	function oldTitle() {
-	document.title = origTitle;
-	document.querySelector("link[rel*='icon']").href = "https://perishablepress.com/wp/wp-content/images/2021/favicon-standard.png"; // also add the icon in these quotes
-	}
+  var origTitle = document.title;
+  function oldTitle() {
+    document.title = origTitle;
+    document.querySelector("link[rel*='icon']").href =
+      "https://perishablepress.com/wp/wp-content/images/2021/favicon-standard.png"; // also add the icon in these quotes
+  }
 
-	function newTitle() {
-	document.title = 'My Drive - Google Drive';		 // the link below is the icon when the website is hidden
-	document.querySelector("link[rel*='icon']").href = "https://upload.wikimedia.org/wikipedia/commons/thumb/1/12/Google_Drive_icon_%282020%29.svg/2295px-Google_Drive_icon_%282020%29.svg.png";
-	}
+  function newTitle() {
+    document.title = "My Drive - Google Drive"; // the link below is the icon when the website is hidden
+    document.querySelector("link[rel*='icon']").href =
+      "https://upload.wikimedia.org/wikipedia/commons/thumb/1/12/Google_Drive_icon_%282020%29.svg/2295px-Google_Drive_icon_%282020%29.svg.png";
+  }
 
-	window.onblur = newTitle;
-	window.onfocus = oldTitle;
+  window.onblur = newTitle;
+  window.onfocus = oldTitle;
 </script>
+
 <html>
-	<body>
-		<head>
-			<!--insert your sites html here-->
-		</head>
-	</body>
+  <body>
+    <!-- insert your html code here -->
+  </body>
 </html>
-<!--This was made by Landon Kuehner on 2/1/2023--> 
-<!--Last edited on 2/2/2023-->
+<!--This was made by Landon Kuehner on 2/1/2023-->
+<!--Last edited on 2/16/2023-->
